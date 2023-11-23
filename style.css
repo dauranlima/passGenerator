@@ -1,0 +1,115 @@
+* {
+  font-family:Helvetica, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #18181b;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 600px;
+  margin-bottom: 24px;
+
+}
+
+.container-input {
+  max-width: 480px;
+  margin: 14px 0;  
+}
+
+.container-input span {
+  color: whitesmoke;
+  font-size: 22px;
+}
+
+.slider {
+  border-radius: 50px;
+  border: 1px;
+  width: 100%;
+  background: rgba(14, 81, 204, 0.979);
+  height: 10px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+.button-cta {
+  width: 100%;
+  background-color: #3eb72b;
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.container-password {
+  max-width: 480px;
+  margin: 14px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title {
+  text-align:center;
+  color: whitesmoke;
+  font-size: 28px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.password{
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.219);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  color: white;
+  border: 1px solid #313131;
+  transition: transform 0.1s ease-in;
+}
+
+.password:hover{
+  transform: scale(1.05);
+}
+
+.x {
+  color: whitesmoke;
+  position: relative;
+  top:20px;
+  padding: 6px 8px;
+  background: rgb(15, 15, 15);
+  text-align: center;
+  visibility: hidden;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-size: 15px;
+}
+
+.container-password:hover .x {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hide {
+  display: none;
+}
+
